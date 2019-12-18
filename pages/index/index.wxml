@@ -1,13 +1,12 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+<!-- 1.数据绑定 -->
+<!-- mastache 语法，从js文件中的data中对应的拿取motto的值 -->
+<view>hello {{motto}}</view>
+
+<!-- 2.列表的读取   wx:for -->
+<view wx:for="{{students}}" wx:key="key">{{item.name}}---{{item.age}}</view>
+
+
+<!-- 3.事件监听 -->
+<view>当前计数 : {{count}}</view>
+<button size="mini" bindtap="addClick">+</button>
+<button size="mini" bindtap="subClick">-</button>
