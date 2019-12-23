@@ -1,0 +1,23 @@
+<!-- 1.button的基本使用 -->
+<button>按钮</button>
+
+<!-- 2.size属性 -->
+<button size="mini">按钮</button>
+<button size="mini">按钮</button>
+
+
+<!-- 3.type属性   -->
+<button size="mini" type="primary">按钮</button>
+
+<button size="mini" type="default">按钮</button>
+<button size="mini" type="warn">按钮</button>
+
+<!-- 镂空效果  没有背景颜色 -->
+<button size="mini" plain>按钮</button>
+
+<button size="mini" disabled>按钮</button>
+
+<button size="mini" loading>按钮</button>
+
+<!-- hover-class -->
+<button hover-class="bgr">按钮</button>
